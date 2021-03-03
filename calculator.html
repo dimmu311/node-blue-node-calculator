@@ -1,0 +1,55 @@
+<script type="text/javascript">
+    RED.nodes.registerType('calculator',{
+        category: 'function',
+        color: '#a6bbcf',
+        defaults: {
+            name: {value:""},
+            formula: {value:"",required:true}
+        },
+        inputs:4,
+        inputInfo: [
+            {
+                label: "value_0",
+                types: ["int", "float"],
+            },
+            {
+                label: "value_1",
+                types: ["int", "float"],
+            },
+            {
+                label: "value_2",
+                types: ["int", "float"],
+            },
+            {
+                label: "value_3",
+                types: ["int", "float"],
+            },
+        ],
+        outputs:1,
+        outputInfo: [
+            {
+                label: "result",
+                types: ["float"]
+            },
+        ],
+        icon: "file.png",
+        label: function() {
+            return this.name||"calculator";
+        }
+    });
+</script>
+
+<script type="text/html" data-template-name="calculator">
+    <div class="form-row">
+        <label for="node-input-name"><i class="fa fa-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+    <div class="form-row">
+        <label for="node-input-formula"><i class="fa fa-cogs"></i> Formula</label>
+        <input type="text" id="node-input-formula" placeholder="Formula">
+    </div>
+</script>
+
+<script type="text/html" data-help-name="calculator">
+    <p>A node to do simple math operations.</p>
+</script>
