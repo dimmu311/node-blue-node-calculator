@@ -1,6 +1,6 @@
 {
   "name": "node-blue-node-calculator",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A node to do simple math operations.",
   "homepage": "https://github.com/dimmu311/node-blue-node-calculator",
   "node-blue": {
