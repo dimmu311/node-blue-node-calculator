@@ -9,19 +9,19 @@
         inputs:4,
         inputInfo: [
             {
-                label: "value_0",
+                label: "value 0",
                 types: ["int", "float"],
             },
             {
-                label: "value_1",
+                label: "value 1",
                 types: ["int", "float"],
             },
             {
-                label: "value_2",
+                label: "value 2",
                 types: ["int", "float"],
             },
             {
-                label: "value_3",
+                label: "value 3",
                 types: ["int", "float"],
             },
         ],
@@ -32,7 +32,7 @@
                 types: ["float"]
             },
         ],
-        icon: "file.png",
+        icon: "font-awesome/fa-calculator",
         label: function() {
             return this.name||"calculator";
         }
@@ -41,15 +41,11 @@
 
 <script type="text/html" data-template-name="calculator">
     <div class="form-row">
-        <label for="node-input-name"><i class="fa fa-tag"></i> Name</label>
+        <label for="node-input-name"><i class="fa fa-tag"></i> <span data-i18n="calculator.label.name"></span></label>
         <input type="text" id="node-input-name" placeholder="Name">
     </div>
     <div class="form-row">
-        <label for="node-input-formula"><i class="fa fa-cogs"></i> Formula</label>
-        <input type="text" id="node-input-formula" placeholder="Formula">
+        <label for="node-input-formula"><i class="fa fa-chevron-right"></i> <span data-i18n="calculator.label.formula"></span></label>
+        <input type="text" id="node-input-formula" placeholder="$0+$1">
     </div>
-</script>
-
-<script type="text/html" data-help-name="calculator">
-    <p>A node to do simple math operations.</p>
 </script>

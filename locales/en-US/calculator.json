@@ -1,0 +1,11 @@
+{
+  "calculator": {
+    "label": {
+      "name": "Name",
+      "formula": "Formula"
+    },
+    "tip": "Tip: See help for more informations.",
+    "paletteHelp": "<p>a node to do simple math operations</p>",
+    "help": "<p>This is a node to do simple math operations. It can handle up to 4 Integer or Float Variables. If you need any constant values e.g. pi or something you can enter this in the formula.</p><p>To use the calculator just enter your formula in the corresponding parameter field.</p><p>You can enter `*/+-` and also `()` and nested `(())`. The calculator follows the math rules `()` before `*/` before `+-`.</p><p>At the place where you want 1 of the 4 Variables write `$` followed by the Input nr. E.g. `$2` to get the value from the variable connected to input 2</p><p>See this examples:</p><ul><li>Add Input 0 and Input 1: `$0+$1`</li><li>Subtract Input 0 from Input 3: `$3-$0`</li><li>Add Input 0 to Input 3 then Multiple with Input 2: `($0+$3)*$2`</li><li>Device Input 0 by Constant Value 2: `$0/2`</li></ul>"
+  }
+}
